@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/carrito.js"></script>
+    <script defer src="js/maincarrito.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="images/Logo.jpg" alt="Logo">
+            </div>
+            <div class="menu-go">
+                <button class="button-home" title="Ir a Principal"><a href="index.html">TIENDA</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-title">
+            <h1>Carrito de compras</h1>
+        </div>
+        <div class="containercarrito">
+            <div class="left-side">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Importe</th>
+                                <th>Categoría</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div id="resumenPedido" style="display: none;">
+                    <h1 class="titulo">Resumen de Pedido</h1>   
+                    <p id="cantidadProductos"></p>
+                    <label for="envio">Envío:</label>
+                    <select id="envio">
+                        <option value="conEnvio">Con envío</option>
+                        <option value="sinEnvio">Sin envío</option>
+                    </select>
+                    <label for="cuotas">Cuotas:</label>
+                    <select id="cuotas">
+                        <option value="1">1 cuota (sin interés)</option>
+                        <option value="3">3 cuotas (5% de interés)</option>
+                        <option value="6">6 cuotas (10% de interés)</option>
+                    </select>
+                    <p id="totalPedido"></p>
+                </div>
+                <div id="sinProductos" style="display: none;">
+                    <p>Sin productos en carrito</p>
+                </div>
+
+                <div id="botonContainer">
+                    <button id="btnConfirmar" class="button" style="display: none;">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+

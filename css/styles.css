@@ -1,0 +1,557 @@
+@import url('https://unpkg.com/@csstools/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic,Roboto:400,400italic,500,500italic,600,600italic,700,700italic,800,800italic');
+
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+main {
+    padding-top: 90px;
+}
+
+footer {
+    text-align: center;
+}
+
+.navbar {
+    z-index: 9999;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    padding: 0px;
+    
+    height: 90px;
+    width: 100%;
+    margin: -10px -10px auto !important;
+    box-shadow: 10px 6px #4788c929;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .class-alertas {
+    display: none;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(193, 213, 12);
+    color: white;
+    width: 60%;
+    height: 40px;
+    box-shadow: 10px 10px 6px rgb(101, 101, 101);
+  }
+  
+  .navbar .nav-logo {
+    padding-top: 16px;
+    padding-left: 16px;
+    width: 180px;
+  }
+  
+  .navbar .nav-logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu-go {
+    cursor: pointer;
+    width: 100px;
+    padding: 22px;
+    margin-right: 40px;
+  }
+  
+  .menu-search {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  .menu-search input[type="search"] {
+    flex-grow: 1;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+.container-title {
+    z-index: -1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    padding-top: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mensajes-container {
+    gap: 30px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    width: 230px;
+    height: 400px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .card-img {
+    transition: all 0.5s;
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .card-img img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  .card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+    text-align: center;
+  }
+  
+  .card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color-sub);
+  }
+  
+  .card-button {
+    text-align: center;
+  }
+  
+  .card-button button {
+    margin-top: 10px;
+    font-size: 20px !important;
+  }
+ 
+
+  body {
+    background-color: #2d8cf0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+thead {
+    background-color: black !important;
+    color: white;
+}
+
+th, td {
+    padding: 16px !important;
+    margin: 6px;
+}
+
+tbody {
+    background-color: white !important;
+}
+
+#mensajeCompra {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#botonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS DE LA IMAGEN DEL CARRITO DE COMPRAS */
+.imagen-producto {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+.button-home {
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8 !important;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(173, 203, 53, 0.923);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    text-decoration: none;
+    padding-bottom: 2px;
+    left: -90px;
+    transform: translateX(0);
+  }
+  
+.button-home:hover {
+    background-color: rgba(173, 203, 53, 0.2);
+  }
+  
+.button-home a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: hwb(230 5% 21%) !important;
+  }
+  
+.button-home a:hover {
+    text-decoration: none;
+  }
+  
+  
+.containercarrito {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+  
+.left-side {
+    display: flex;
+    justify-content: center;
+}
+  
+
+/* -------------------------------------Estilos para el contenedor de la derecha------------------------------*/
+.right-side {
+  margin: 20px;
+  padding: 10px;
+}
+
+.titulo {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+#resumenPedido {
+  margin-bottom: 15px;
+}
+
+#cantidadProductos {
+  font-weight: bold;
+  color: black;
+}
+
+label {
+  margin-right: 10px;
+  color: black;
+}
+
+select {
+  margin-right: 20px;
+}
+
+#totalPedido {
+  color: black;
+  font-weight: bold;
+}
+
+#sinProductos {
+  margin-bottom: 15px;
+}
+
+
+
+/* ------------------------------------CUBO DE CARGA PARA IR AL CARRITO------------------------ */
+.center-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos de la animación */
+.cube-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(-30deg);
+  width: 75px;
+  height: 75px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube-loader .cube-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube-loader .cube-wrapper .cube-span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+  background: linear-gradient(
+    to bottom,
+    hsl(330, 3.13%, 25.1%) 0%,
+    hsl(177.27, 21.71%, 32.06%) 5.5%,
+    hsl(176.67, 34.1%, 36.88%) 12.1%,
+    hsl(176.61, 42.28%, 40.7%) 19.6%,
+    hsl(176.63, 48.32%, 43.88%) 27.9%,
+    hsl(176.66, 53.07%, 46.58%) 36.6%,
+    hsl(176.7, 56.94%, 48.91%) 45.6%,
+    hsl(176.74, 62.39%, 50.91%) 54.6%,
+    hsl(176.77, 69.86%, 52.62%) 63.4%,
+    hsl(176.8, 76.78%, 54.08%) 71.7%,
+    hsl(176.83, 83.02%, 55.29%) 79.4%,
+    hsl(176.85, 88.44%, 56.28%) 86.2%,
+    hsl(176.86, 92.9%, 57.04%) 91.9%,
+    hsl(176.88, 96.24%, 57.59%) 96.3%,
+    hsl(176.88, 98.34%, 57.93%) 99%,
+    hsl(176.89, 99.07%, 58.04%) 100%
+  );
+}
+
+.cube-top {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: hsl(330, 3.13%, 25.1%) 0%;
+  transform: rotateX(90deg) translateZ(37.5px);
+  transform-style: preserve-3d;
+}
+
+.cube-top::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: hsl(176.61, 42.28%, 40.7%) 19.6%;
+  transform: translateZ(-90px);
+  filter: blur(10px);
+  box-shadow: 0 0 10px #323232,
+              0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
+              0 0 30px #323232,
+              0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
+}
+
+
+
+/* -------------------------------------- BANER DEL ESCUDO DE BOCA -------------------------------------- */
+/* -------------------------------------- BANER DEL ESCUDO DE BOCA -------------------------------------- */
+/* -------------------------------------- BANER DEL ESCUDO DE BOCA -------------------------------------- */
+#escudos-container {
+  max-width: 100vw;
+  height: 5cm;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: white;
+}
+
+.escudo-container {
+  width: 5cm;
+  height: 100%;
+  display: inline-block;
+  animation: desplazamiento 20s linear infinite; 
+}
+
+.escudo {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/BOCA-RIBBON_tcm216-647531.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+
+/* -------------------------------------- FRANJA AMARILLA CON LA BOMBONERA E IMAGENES BOMBONERA-------------------------------------- */
+/* -------------------------------------- FRANJA AMARILLA CON LA BOMBONERA E IMAGENES BOMBONERA-------------------------------------- */
+/* -------------------------------------- FRANJA AMARILLA CON LA BOMBONERA E IMAGENES BOMBONERA-------------------------------------- */
+
+.franja-amarilla {
+  width: 100%;
+  height: 5cm;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.franja-amarilla h2 {
+  margin: 0;
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+.imagen-bombonera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5cm;
+  overflow: hidden;
+}
+.imagen-bombonera img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagen-bombonera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 5cm;
+  overflow: hidden;
+}
+
+.imagen-bombonera img {
+  width: 25%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ------------------------------------------ESTILOS DEL FOOTER----------------------------------------- */
+/* ------------------------------------------ESTILOS DEL FOOTER----------------------------------------- */
+/* ------------------------------------------ESTILOS DEL FOOTER----------------------------------------- */
+footer {
+  background-color: #f2f2f2;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+
+.primary {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.primary .column {
+  flex: 1; 
+  padding: 10px;
+  max-width: 350px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.primary .column h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.primary .column p {
+  margin-bottom: 20px;
+}
+
+.primary .column .social {
+  text-align: center;
+}
+
+.primary .column .social a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.primary .column .social i:hover {
+  color: #007bff;
+}
+
+.primary .column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.primary .column ul li {
+  margin-bottom: 10px;
+}
+
+.primary .column ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.primary .column ul li a:hover {
+  color: #007bff;
+}
+

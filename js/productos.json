@@ -1,0 +1,85 @@
+[{
+    "id": 1,
+    "imagen": "./images/Indumentaria/Camiseta1.jpg",
+    "nombre": "Camiseta 1",
+    "importe": 20999,
+    "categoria": "Camiseta"
+},
+{
+    "id": 2,
+    "imagen": "./images/Indumentaria/Camiseta2.jpg",
+    "nombre": "Camiseta 2",
+    "importe": 15000,
+    "categoria": "Camiseta"
+},
+{
+    "id": 3,
+    "imagen": "./images/Indumentaria/Camiseta3.jpg",
+    "nombre": "Camiseta 3",
+    "importe": 12250,
+    "categoria": "Camiseta"
+},
+{
+    "id": 4,
+    "imagen": "./images/Indumentaria/Camiseta4.jpg",
+    "nombre": "Camiseta 4",
+    "importe": 25000,
+    "categoria": "Camiseta"
+},
+{
+    "id": 5,
+    "imagen": "./images/Indumentaria/Camiseta5.jpg",
+    "nombre": "Camiseta 5",
+    "importe": 15000,
+    "categoria": "Camiseta"
+},
+{
+    "id": 6,
+    "imagen": "./images/Indumentaria/Camiseta6.jpg",
+    "nombre": "Camiseta 6",
+    "importe": 20999,
+    "categoria": "Camiseta"
+},
+{
+    "id": 7,
+    "imagen": "./images/Indumentaria/Campera1.jpg",
+    "nombre": "Campera 1",
+    "importe": 40000,
+    "categoria": "Campera"
+},
+{
+    "id": 8,
+    "imagen": "./images/Indumentaria/Campera2.jpg",
+    "nombre": "Campera 2",
+    "importe": 30000,
+    "categoria": "Campera"
+},
+{
+    "id": 9,
+    "imagen": "./images/Indumentaria/Short1.avif",
+    "nombre": "Short 1",
+    "importe": 15000,
+    "categoria": "Short"
+},
+{
+    "id": 10,
+    "imagen": "./images/Indumentaria/Short2.avif",
+    "nombre": "Short 2",
+    "importe": 15000,
+    "categoria": "Short"
+},
+{
+    "id": 11,
+    "imagen": "./images/Indumentaria/Short3.avif",
+    "nombre": "Short 3",
+    "importe": 15000,
+    "categoria": "Short"
+},
+{
+    "id": 12,
+    "imagen": "./images/Indumentaria/Short4.avif",
+    "nombre": "Short 4",
+    "importe": 15000,
+    "categoria": "Short"
+}
+]
