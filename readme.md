@@ -21,6 +21,11 @@ El objetivo de este proyecto de comercio electrónico era desarrollar una simula
 5. **Manejo de promesas con fetch.**
 6. **Carga de datos desde un JSON local**
 
-
 El cumplimiento de estas consignas fue crucial para proporcionar a los usuarios una experiencia de compra agradable y lograr los objetivos del proyecto de comercio electrónico.
 
+## Pasos para ejecutar el proyecto
+
+1. **Clonar este repositorio.**
+2. **Instalar la extension "Live Server" en Visual Studio Code.** 
+3. **Abrir la carpeta del proyecto clonado** 
+4. **Hacer click en "Go Live" para ejecutar y abrir el proyecto** 
