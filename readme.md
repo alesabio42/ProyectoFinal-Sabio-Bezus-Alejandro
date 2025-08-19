@@ -29,3 +29,10 @@ El cumplimiento de estas consignas fue crucial para proporcionar a los usuarios 
 2. **Instalar la extension "Live Server" en Visual Studio Code.** 
 3. **Abrir la carpeta del proyecto clonado** 
 4. **Hacer click en "Go Live" para ejecutar y abrir el proyecto** 
+
+---
+
+## 📚 Documentación
+- Material y referencias del curso: https://drive.google.com/drive/folders/1Z7lCYgDJ8h5fWiq2QT6cukBIhmHlxJ8X?usp=drive_link
+
+---
